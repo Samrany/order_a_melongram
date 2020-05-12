@@ -1,9 +1,8 @@
 <!doctype html>
 <html>
 <head>
-	<title> 
-		<h1> Order a Melongram </h1>  
-	</title>
+	<title> Order a Melongram </title>
+	<h1> Order a Melongram </h1>
 </head>
 
 <body>
@@ -12,7 +11,7 @@
 	<p> Each Melongram comes with a custom message printed on high-quality cardstock
 		and your choice of a hand-picked, premium melon. </p>
 
-	<h2> Melon Options <h2/>
+	<h2> Melon Options </h2>
 	<p> Choose from one of these melons:</p>
 	<p>
 		<table>
@@ -28,16 +27,17 @@
 				<td> Honeydew </td>
 				<td> $1,750,00.00 </td>
 			</tr>
+		</table>
 
 	<h2> Order Form </h2>
 	<form>
 		<div>
-			<label> name </label>
+			<label> Your Name </label>
 			<input type= "text" name ="name">
 		</div>
 		<div>
 
-			<label> recipient's name </label>
+			<label> Recipient's name </label>
 			<input type = "text" name = "recipient">
 		</div>
 
@@ -50,16 +50,27 @@
 			</select>
 		</div>
 
+		<div>
+			When should we deliver?
+			
+			<input type = "radio" name ="time" value = "am"> Morning
+			<input type = "radio" name ="time" value = "pm"> Evening
+			<input type = "radio" name ="time" value = "any"> Any time
+		</div>
+		<div>
+			<label> Enter your message </label>
+			<br>
+			<textarea name="message"></textarea>
+		</div>
+		<div>
+			Subscribe to our newsletter
+			<input type = "checkbox" name = "subscribe" value = "yes"> yes
+		</div>
 
-When should we deliver?
-Morning
-Evening
-Any time
 
-Enter your message:
+		<input type="submit">
 
-Subscribe to our newsletter
-Yes
+	</form>
 
 </body>
 </html>
